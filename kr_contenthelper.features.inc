@@ -58,6 +58,22 @@ function kr_contenthelper_image_default_styles() {
     ),
   );
 
+  // Exported image style: kr_full_view.
+  $styles['kr_full_view'] = array(
+    'label' => 'KR Full view (1200x1200)',
+    'effects' => array(
+      31 => array(
+        'name' => 'image_scale',
+        'data' => array(
+          'width' => 1200,
+          'height' => 1200,
+          'upscale' => 0,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
   // Exported image style: kr_hero.
   $styles['kr_hero'] = array(
     'label' => 'KR Hero (960x320)',
