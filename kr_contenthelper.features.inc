@@ -34,6 +34,30 @@ function kr_contenthelper_image_default_styles() {
     ),
   );
 
+  // Exported image style: kr_default.
+  $styles['kr_default'] = array(
+    'label' => 'KR Default (640x360)',
+    'effects' => array(
+      29 => array(
+        'name' => 'imagefield_focus_scale_and_crop',
+        'data' => array(
+          'width' => 640,
+          'height' => 360,
+          'strength' => 'high',
+        ),
+        'weight' => 1,
+      ),
+      30 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 640,
+          'height' => 360,
+        ),
+        'weight' => 2,
+      ),
+    ),
+  );
+
   // Exported image style: kr_hero.
   $styles['kr_hero'] = array(
     'label' => 'KR Hero (960x320)',
