@@ -43,6 +43,102 @@ function kr_contenthelper_image_default_styles() {
     ),
   );
 
+  // Exported image style: kr_circle.
+  $styles['kr_circle'] = array(
+    'label' => 'KR Circle (260x260)',
+    'effects' => array(
+      4 => array(
+        'name' => 'coloractions_convert',
+        'data' => array(
+          'format' => 'image/png',
+          'quality' => 90,
+        ),
+        'weight' => -10,
+      ),
+      5 => array(
+        'name' => 'imagefield_focus_scale_and_crop',
+        'data' => array(
+          'width' => 260,
+          'height' => 260,
+          'strength' => 'high',
+        ),
+        'weight' => -9,
+      ),
+      2 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 260,
+          'height' => 260,
+        ),
+        'weight' => -8,
+      ),
+      3 => array(
+        'name' => 'canvasactions_roundedcorners',
+        'data' => array(
+          'radius' => 130,
+          'independent_corners_set' => array(
+            'independent_corners' => 0,
+            'radii' => array(
+              'tl' => 30,
+              'tr' => 130,
+              'bl' => 30,
+              'br' => 130,
+            ),
+          ),
+        ),
+        'weight' => -7,
+      ),
+    ),
+  );
+
+  // Exported image style: kr_circle_small.
+  $styles['kr_circle_small'] = array(
+    'label' => 'KR Circle small (120x120)',
+    'effects' => array(
+      8 => array(
+        'name' => 'coloractions_convert',
+        'data' => array(
+          'format' => 'image/png',
+          'quality' => 90,
+        ),
+        'weight' => -10,
+      ),
+      9 => array(
+        'name' => 'imagefield_focus_scale_and_crop',
+        'data' => array(
+          'width' => 120,
+          'height' => 120,
+          'strength' => 'high',
+        ),
+        'weight' => -9,
+      ),
+      10 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 120,
+          'height' => 120,
+        ),
+        'weight' => -8,
+      ),
+      11 => array(
+        'name' => 'canvasactions_roundedcorners',
+        'data' => array(
+          'radius' => 60,
+          'independent_corners_set' => array(
+            'independent_corners' => 0,
+            'radii' => array(
+              'tl' => 30,
+              'tr' => 130,
+              'bl' => 30,
+              'br' => 130,
+            ),
+          ),
+        ),
+        'weight' => -7,
+      ),
+    ),
+  );
+
   // Exported image style: kr_default.
   $styles['kr_default'] = array(
     'label' => 'KR Default (640x360)',
@@ -197,6 +293,30 @@ function kr_contenthelper_image_default_styles() {
         'data' => array(
           'width' => 350,
           'height' => 350,
+        ),
+        'weight' => 2,
+      ),
+    ),
+  );
+
+  // Exported image style: kr_square_small.
+  $styles['kr_square_small'] = array(
+    'label' => 'KR Square small (180x180)',
+    'effects' => array(
+      6 => array(
+        'name' => 'imagefield_focus_scale_and_crop',
+        'data' => array(
+          'width' => 180,
+          'height' => 180,
+          'strength' => 'high',
+        ),
+        'weight' => 1,
+      ),
+      7 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 180,
+          'height' => 180,
         ),
         'weight' => 2,
       ),
